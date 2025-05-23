@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.582" tests="10" skipped="0" failures="10" errors="0">
+<testcase classname="User Login" name="Login with valid credentials" time="0.074">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at stepDefinition.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:27)
+	at ✽.I am on the login page(file:///D:/Code-Breakers-demoblaze/demoblaze/src/test/resources/features/Login.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the login page................................................failed
+When I enter a valid email and password.....................................skipped
+And I click the login button................................................skipped
+Then I should see the "Log out" button......................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with invalid password" time="0.007">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at stepDefinition.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:27)
+	at ✽.I am on the login page(file:///D:/Code-Breakers-demoblaze/demoblaze/src/test/resources/features/Login.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the login page................................................failed
+When I enter a valid email and an invalid password..........................skipped
+And I click the login button................................................skipped
+Then I should see an alert message "Wrong password."........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login with an invalid email" time="0.007">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at stepDefinition.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:27)
+	at ✽.I am on the login page(file:///D:/Code-Breakers-demoblaze/demoblaze/src/test/resources/features/Login.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the login page................................................failed
+When I enter an invalid email and a valid password..........................skipped
+And I click the login button................................................skipped
+Then I should see an alert message "User does not exist."...................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login without credentials" time="0.007">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at stepDefinition.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:27)
+	at ✽.I am on the login page(file:///D:/Code-Breakers-demoblaze/demoblaze/src/test/resources/features/Login.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the login page................................................failed
+When I leave the email and password fields empty............................skipped
+And I click the login button................................................skipped
+Then I should see an alert message "Please fill out Email and Password fields.".skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Login" name="Login and verify session persistence" time="0.005">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at stepDefinition.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:27)
+	at ✽.I am on the login page(file:///D:/Code-Breakers-demoblaze/demoblaze/src/test/resources/features/Login.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the login page................................................failed
+When I enter a valid email and password.....................................skipped
+And I click the login button................................................skipped
+And I refresh the page......................................................skipped
+Then I should still be logged in............................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Sign Up Feature" name="Sign up with valid details" time="0.007">
+<failure/>
+<system-out><![CDATA[
+Given I am on the Sign Up page..............................................undefined
+When I enter a new unique username..........................................skipped
+And I enter a valid password................................................skipped
+And I click on the Sign Up button...........................................skipped
+Then I should see a success message "Sign up successful."...................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Sign Up Feature" name="Sign up with an existing username" time="0.004">
+<failure/>
+<system-out><![CDATA[
+Given I am on the Sign Up page..............................................undefined
+When I enter an already registered username.................................skipped
+And I enter a valid password................................................skipped
+And I click on the Sign Up button...........................................skipped
+Then I should see an alert message "This user already exists."..............skipped
+]]></system-out>
+</testcase>
+<testcase classname="Sign Up Feature" name="Sign up with an empty username" time="0.003">
+<failure/>
+<system-out><![CDATA[
+Given I am on the Sign Up page..............................................undefined
+When I leave the username field empty.......................................skipped
+And I enter a valid password................................................skipped
+And I click on the Sign Up button...........................................skipped
+Then I should see an alert message "Please fill out the username field."....skipped
+]]></system-out>
+</testcase>
+<testcase classname="Sign Up Feature" name="Sign up with an empty password" time="0.003">
+<failure/>
+<system-out><![CDATA[
+Given I am on the Sign Up page..............................................undefined
+When I enter a new unique username..........................................skipped
+And I leave the password field empty........................................skipped
+And I click on the Sign Up button...........................................skipped
+Then I should see an alert message "Please fill out the password field."....skipped
+]]></system-out>
+</testcase>
+<testcase classname="Sign Up Feature" name="Sign up with both fields empty" time="0.01">
+<failure/>
+<system-out><![CDATA[
+Given I am on the Sign Up page..............................................undefined
+When I leave both username and password fields empty........................skipped
+And I click on the Sign Up button...........................................skipped
+Then I should see an alert message "Please fill out all required fields."...skipped
+]]></system-out>
+</testcase>
+</testsuite>
